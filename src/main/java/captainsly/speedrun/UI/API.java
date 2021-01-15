@@ -1,0 +1,17 @@
+package captainsly.speedrun.UI;
+
+public enum API {
+
+	INTERNATIONAL("international"), JAPANESE("japanese"); 
+	
+	String id;
+	
+	API(String id) {
+		this.id = id;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	
+}

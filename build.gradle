@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+javafx {
+    version = "11.0.2"
+    modules = [ 'javafx.controls' ]
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    
+    maven { url 'https://jitpack.io' }
+}
+
+project.ext.SpeedrunAPI = "a15010becb"
+
+dependencies {
+
+	// Speedrun.com API
+	implementation 'com.github.s5bug:Speedrun4J:a15010becb'
+
+}
